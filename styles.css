@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SF-Display';
+    src: url(SF-Pro-Display-Bold.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'SF-Display';
+    src: url(SF-Pro-Display-Medium.woff);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'SF-Display';
+    src: url(SF-Pro-Display-Regular.woff);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'SF-Text';
+    src: url(sf-pro-text-bold.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'SF-Text';
+    src: url(sf-pro-text-medium.woff);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'SF-Text';
+    src: url(sf-pro-text-regular.woff);
+    font-weight: normal;
+}
+
+/* font and weight */
+h1 {
+    font-family: 'SF-Display';
+    font-size: 72px;  
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'SF-Display';
+    font-size: 34px;
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+  }
+
+.medium {
+    font-weight: 500;
+}
+
+nav {
+    font-family: 'SF-Display';
+    font-size: 18px;    
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display:inline-block;
+    font-family: 'SF-Display';
+    padding: 0px 20px;
+    font-size: 20px;    
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+
+p {
+    font-family: 'SF-Display';
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 150%;
+    margin: 0;
+}
+
+nav {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* logo */
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    
+}
+
+h3 {
+    margin-right: 900px;
+}
+
+
+
+
+
+
+/* colors  */
+/* * {
+    color: black;
+    font-family: 'SF-Text','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+a:visited, a:link {
+    color: orange;
+
+}
+
+a:active, a:hover {
+    color:rgb(170, 116, 0) ;
+
+}
+
+nav a:visited {
+    color: rgb(136, 135, 134);
+} 
+nav a:hover {
+    color: black ;
+
+}
+
+.me, .logo {
+    border-radius: 100em;
+    float: right;
+    
+}
+
+
+/* 
+#client a:active, #client a:hover{
+    color:aqua ;
+
+}
+
+I want to change the Client Systems link to blue!
+
+*/
+
+/* space between */
+
+main {
+    margin-top: 3em;
+    margin-bottom: 7em;
+} 
+
+html {
+    margin: 3vw 0vw;;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.grid {
+    padding-left: 158px;
+    padding-right: 158px;
+}
+
+.space {
+    padding-bottom: 3em;
+}
+
+/* main spaceing */
+
+.top {
+    margin-bottom: 3em;
+}
+
+.sidebyside {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.me {
+    
+    margin-left: 12em;
+    margin-right: 12em;
+    
+}
+
+.sidebyside2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+    margin-bottom: 7em;
+}
+
+.right2 {
+    margin-left: 3em;
+}
+
+.left2 {
+    margin-top: 2em;
+}
+
+.left3 {
+    margin-top: 1em;
+    margin-left: 1px;
+}
+/* Footer */
+
+footer p {
+    line-height: 4em;
+    color: gray;
+}
+
+footer a:visited, footer a:link {
+    color: gray;
+
+}
+
+footer a:active, footer a:hover {
+    color: black;
+
+}
+
+/* icons */
+
+.icons {
+    display: inline-block;
+    margin-top: 3vw;
+    margin-left: 1.5vw;
+    height: 1.5em;
+    opacity: 0.45;
+    transition: 0.28s;
+  }
+
+  footer {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+
+  }
+  
+  .icons:hover {
+    opacity: 1;
+    transition: 0.28s;
+  }
+
+/* Motion/movement */
+
+.a-logo {
+    -webkit-transition: -webkit-transform 1s;
+}
+
+.a-logo:hover{
+    -webkit-transform: rotate(360deg) translate(0);
+}
+
+.shake:hover{
+    -webkit-animation:shake .1s ease-in-out
+    .1s infinite alternate;
+}
+@-webkit-keyframes shake{
+    from{
+        -webkit-transform:rotate(-15deg);
+        -webkit-transform-origin: center
+        center;
+    }
+}
