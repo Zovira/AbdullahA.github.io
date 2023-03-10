@@ -38,6 +38,7 @@ h1 {
     font-weight: bold;
     line-height: inherit;
     margin: 0;
+    color: white;
 }
 
 h3 {
@@ -48,7 +49,7 @@ h3 {
     margin: 0;
   }
 
-.medium {
+.medium, .medium1 {
     font-weight: 500;
 }
 
@@ -75,8 +76,9 @@ li {
 }
 
 p {
+    color: white;
     font-family: 'SF-Display';
-    font-size: 26px;
+    font-size: 30px;
     font-weight: normal;
     line-height: 150%;
     margin: 0;
@@ -95,9 +97,10 @@ nav {
     
 }
 
-h3 {
-    margin-right: 900px;
+.logo1 {
+    float: left
 }
+
 
 
 
@@ -118,12 +121,12 @@ a {
     color: inherit;
 
 }
-a:visited, a:link {
+.sidebyside a:visited, .sidebyside a:link {
     color: orange;
 
 }
 
-a:active, a:hover {
+.sidebyside a:active, .sidebyside a:hover {
     color:rgb(170, 116, 0) ;
 
 }
@@ -136,7 +139,7 @@ nav a:hover {
 
 }
 
-.me, .logo {
+.me {
     border-radius: 100em;
     float: right;
     
@@ -146,27 +149,46 @@ nav a:hover {
 /* 
 #client a:active, #client a:hover{
     color:aqua ;
+}
+I want to change the Client Systems link to blue!
+*/
 
+/* header */
+
+header {
+    background-color: rgba(223, 216, 216, 0.062);
+    
+    backdrop-filter: blur(5px);
+}
+.medium1 {
+    float: left;
+    margin-left: 20px;
+
+    color: white;
 }
 
-I want to change the Client Systems link to blue!
-
-*/
 
 /* space between */
 
-main {
-    margin-top: 3em;
-    margin-bottom: 7em;
-} 
+
+/* body {
+    max-width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+} */
 
 html {
-    margin: 3vw 0vw;;
+    margin: 0.2vw 0vw;;
+
+
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 .grid {
@@ -180,33 +202,64 @@ header {
 
 /* main spaceing */
 
+.main2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+
+.main1 {
+    margin-top: 55%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
 .top {
     margin-bottom: 3em;
 }
 
 .sidebyside {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
+
 }
 
-.me {
-    
-    margin-left: 12em;
-    margin-right: 12em;
-    
+.right {
+    margin-right: 10%;
+    margin-left: 10%;
+
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.sidebyside2 {
+/* .me {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    
+} */
+
+.sidebyside3 {
+    margin-top: 5%;
+
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
+    margin-bottom: 7em;
+}
+
+
+.sidebyside2 {
+
+    margin-top: 50%;
+
+	display: flex;
     margin-bottom: 7em;
 }
 
@@ -243,27 +296,41 @@ footer a:active, footer a:hover {
 
 .icons {
     display: inline-block;
-    margin-top: 3vw;
-    margin-left: 1.5vw;
+    margin-left: 0.4vw;
     height: 1.5em;
-    opacity: 0.45;
+    opacity: 0.51;
     transition: 0.28s;
+
   }
 
   footer {
+    margin-top: 10%;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
 
+    margin-left: 2%;
+    margin-right: 2%;
+	
+  }
+
+  footer > p {
+    
+
+        line-height: 0%;
+        margin: 0;
+    
   }
   
   .icons:hover {
     opacity: 1;
     transition: 0.28s;
   }
+
+
+html {
+    background-color: rgb(20, 20, 20);
+}
+
 
 /* Motion/movement */
 
@@ -286,3 +353,27 @@ footer a:active, footer a:hover {
         center;
     }
 }
+
+
+/* video */
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }   
+}
+
