@@ -7,17 +7,22 @@
         <title>Resume</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="form.css">
+        
     </head>
+    
     <body>
-
-        <div class="grid">
+    
+ 
+        
         <header> 
-                <a class="logo" href="index.html">
-                <img class="a-logo" src="logo.png" alt="logo"></a>
-
-                <h3 class="medium">Abdullah Abadi</h3>
-
+        
+            <div class="spacea">
+                <a class="logo1" href="index.html">
+                <h3 class="medium1">Abdullah Abadi</h3></a>
+            </div>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -28,40 +33,39 @@
         
         </header>
 
-
-        <main>
-        <div class="sidebyside2">
-            <div id="message" class="left3">
-                <img class="a-logo"  src="message.png" alt="message emoji">
-            </div>
-            
-            <div class="right2">
-                <h1>Hello there!</h1>
-                <h1 class="medium">I'm not home leave a message. </h1>
-            </div>
         
-            
-            
-            
-      
-            
-    </div>
-        </main>
-
-
-        <footer>
-            <div class="left3">
-                <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mail:abdullahabadi2002@gmail.com?subject=hey!" target="_blank">abdullahabadi2002@gmail.com</a>.</p> 
-            </div>
-
-            <div class="social">
-                <a href="https://github.com/Zovira" target="_blank"><img class="icons" alt="github" src="github-svgrepo-com.svg"></a>
-                <a href="https://www.linkedin.com/in/abadia01/" target="_blank"><img class="icons" alt="linkedin" src="linkedin.svg"></a>
-
-            </div>
-
-            
-        </footer>
-    </div>
+            <h1>Registration Form</h1>
+            <p>Please fill out this form with the required information</p>
+            <form method="post" action='https://register-demo.freecodecamp.org'>
+              <fieldset>
+                <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+              </fieldset>
+              <fieldset>
+                <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+                <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+                <label for="terms-and-conditions">
+                  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                </label>
+              </fieldset>
+              <fieldset>
+                <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+                <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+                <label for="referrer">How did you hear about us?
+                  <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Friend</option>
+                    <option value="2">Family</option>
+                    <option value="3">College</option>
+                    <option value="4">Other</option>
+                  </select>
+                </label>
+                <label for="bio">Provide a bio:
+                  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+                </label>
+              </fieldset>
+              <input type="submit" value="Submit" />
+            </form>
     </body>
 </html>
